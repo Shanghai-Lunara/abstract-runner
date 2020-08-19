@@ -15,14 +15,18 @@ type Runner struct {
 }
 
 type Project struct {
-	GitAddress string `json:"gitAddress"`
-	BranchName string `json:"branchName"`
-	DataPath   string `json:"dataPath"`
-	WorkerPath string `json:"workerPath"`
-
 	// The two fields bellow were used for starting the specific project
 	Command string   `json:"command"`
 	Args    []string `json:"args"`
+}
+
+// Git
+type Git struct {
+	GitAddress string `json:"gitAddress"`
+	BranchName string `json:"branchName"`
+	CommitHash string `json:"commitHash"`
+	DataPath   string `json:"dataPath"`
+	WorkerPath string `json:"workerPath"`
 }
 
 type TaskList struct {
