@@ -6,3 +6,6 @@ vendor
 
 # bin
 abstract-runner
+
+# test data
+test

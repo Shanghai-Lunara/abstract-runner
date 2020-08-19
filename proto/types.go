@@ -15,6 +15,7 @@ type Runner struct {
 }
 
 type Project struct {
+	Git Git `json:"git"`
 	// The two fields bellow were used for starting the specific project
 	Command string   `json:"command"`
 	Args    []string `json:"args"`
@@ -23,6 +24,8 @@ type Project struct {
 // Git
 type Git struct {
 	GitAddress string `json:"gitAddress"`
+	Email      string `json:"email"`
+	Password   string `json:"password"`
 	BranchName string `json:"branchName"`
 	CommitHash string `json:"commitHash"`
 	DataPath   string `json:"dataPath"`
