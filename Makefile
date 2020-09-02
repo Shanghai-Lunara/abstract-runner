@@ -7,5 +7,7 @@ abs2:
 	rm -rf abstract-runner
 	go build -o abstract-runner cmd/main.go
 
+clean:
+	rm -f abstract-runner
 
 
